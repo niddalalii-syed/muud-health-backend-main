@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "c5c0721a-0af0-4160-94b8-411f57a5108b",
+		"name": "muudHealth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "44463075",
+		"_collection_link": "https://jahanzaibali-7667218.postman.co/workspace/Jahanzaib-Ali's-Workspace~224fcc2c-3f0f-4cab-834a-3e5c1246494c/collection/44463075-c5c0721a-0af0-4160-94b8-411f57a5108b?action=share&source=collection_link&creator=44463075"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:3000/journal/entry"
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:3000/journal/entry"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Journal Entry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:3000/journal/entry"
+			},
+			"response": []
+		},
+		{
+			"name": "journal Entry",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/journal/user/1"
+			},
+			"response": []
+		},
+		{
+			"name": "contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user_id\": 2,\r\n  \"contact_name\": \"hammad ahmed\",\r\n  \"contact_email\": \"jane@example.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/contacts/add"
+			},
+			"response": []
+		},
+		{
+			"name": "get contact",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/contacts/user/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contacts",
+						"user",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
