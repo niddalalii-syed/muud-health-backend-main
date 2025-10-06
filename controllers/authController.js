@@ -16,7 +16,7 @@ exports.register = async (req, res) => {
     );
     res.status(201).json({ success: true, user_id: result.rows[0].id });
   } catch (err) {
-    console.error('❌ Registration error found:', err);
+    console.error('❌ Registration error:', err);
     res.status(500).json({ message: 'Username already exists or DB error', error: err.detail });
   }
 };
